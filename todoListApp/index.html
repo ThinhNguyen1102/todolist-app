@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div id="overview-content" class="overview-content">
+        <div class="avatar">
+          <i class="fas fa-user-circle"></i>
+          <button class="to-todoList">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+        </div>
+
+        <h1 class="name-user">Thinh <br />Nguyen</h1>
+        <div class="nav-bar">
+          <div class="button-list">
+            <button class="nav-bar-btn">
+              <i class="fas items fa-bookmark"></i>
+              <h5>Templates</h5>
+            </button>
+            <button class="nav-bar-btn">
+              <i class="fas items fa-border-all"></i>
+              <h5>Categories</h5>
+            </button>
+            <button class="nav-bar-btn">
+              <i class="fas items fa-chart-pie"></i>
+              <h5>Analytics</h5>
+            </button>
+          </div>
+        </div>
+        <div class="line"></div>
+        <label class="theme-switch" for="theme-checkbox">
+          <input type="checkbox" id="theme-checkbox" name="theme-checkbox" />
+          <span class="slider" for="theme-checkbox"></span>
+        </label>
+      </div>
+
+      <div id="todo-list" class="todo-list">
+        <div class="totolist__nav">
+          <div class="nav__left">
+            <button class="button-bars">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div class="nav__right">
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+            <button>
+              <i class="fas fa-bell"></i>
+            </button>
+          </div>
+        </div>
+        <div class="todolist__title">
+          <h1>What's up, Thinh!</h1>
+        </div>
+        <div class="todolist__categories">
+          <div class="categories-title">CATEGORIES</div>
+          <div class="categories-items">
+            <div class="items cate__business">
+              <h5 class="num-tasks">40 tasks</h5>
+              <h3 class="cate__title">Business</h3>
+              <div class="process-bar">
+                <div class="processing-bus"></div>
+              </div>
+            </div>
+            <div class="items cate__personal">
+              <h5 class="num-tasks">18 tasks</h5>
+              <h3 class="cate__title">Personal</h3>
+              <div class="process-bar">
+                <div class="processing-per"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="todolist_tasks">
+          <div class="tasks-title">TODAY'S TASKS</div>
+          <!-- <div class="tasks-item">
+            <label for="task-1" class="task task-busi">
+              <input type="checkbox" id="task-1" class="checkbox" />
+              <i class="fas fa-check"></i>
+              <span>Business task</span>
+            </label>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="add-task">
+        <div class="box-exit-add-btn">
+          <button class="exit-add-btn">Exit</button>
+        </div>
+
+        <div class="box-input">
+          <input placeholder="Enter new task" type="text" />
+        </div>
+
+        <div class="box-date">
+          <input type="date" name="task-date" />
+        </div>
+
+        <div class="box-feature">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+        </div>
+
+        <div class="box-submit-btn">
+          <button class="submit-btn">submit</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="add-task-btn">
+      <button class="add-btn"><i class="fas fa-plus"></i></button>
+    </div>
+
+    <script src="./effect.js"></script>
+  </body>
+</html>
